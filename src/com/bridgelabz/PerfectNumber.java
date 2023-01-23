@@ -2,26 +2,26 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 
-public class Prime {
+public class PerfectNumber {
 
     public static void main(String[] args) {
 
+        int sum = 0;
         System.out.println("Enter any Number: ");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        int count = 0;
 
-        for (int i = 1; i <= num; i++) {
+        for (int i = 1; i < num; i++) {
 
             if (num % i == 0) {
-                count++;
+                sum = sum + i;
             }
         }
 
-        if (count == 2) {
-            System.out.println("Prime Number");
+        if (sum == num) {
+            System.out.println("Perfect Number");
         } else {
-            System.out.println("Not Prime Number");
+            System.out.println("Not Perfect Number");
         }
     }
 }
