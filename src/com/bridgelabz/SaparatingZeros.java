@@ -31,7 +31,7 @@ public class SaparatingZeros {
             myArray[positioning] = 0;
             positioning--;
         }
-        System.out.println("The  separated array is: -->" + Arrays.toString(myArray));
+        System.out.println("The separated array is: --> " + Arrays.toString(myArray));
     }
 
     public static void main(String[] args) {

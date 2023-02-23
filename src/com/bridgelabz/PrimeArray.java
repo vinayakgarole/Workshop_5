@@ -7,15 +7,20 @@ public class PrimeArray {
         int[] temp = new int[100];
         int count = 0;
 
+        int sum = 0;
+        System.out.println("This is a Prime Number");
+
         for (int i = 2; i <= 100; i++) {
 
             if (isPrime(i)) {
-     //           System.out.println(i);
+                sum = sum + i;
+                System.out.println(i);
             } else {
                 temp[count] = i;
                 count++;
             }
         }
+        System.out.println("Sum of Prime Numbers: " + sum);
         System.out.println("Non-prime numbers: ");
 
         for (int i = 0; i < count; i++) {

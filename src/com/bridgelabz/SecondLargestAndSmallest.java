@@ -6,12 +6,10 @@ public class SecondLargestAndSmallest {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-
         int[] numbers = {5, 3, 7, 1, 9, 2, 8, 4, 6};
 
         // Find the second smallest number
-        int min1 = Integer.MAX_VALUE;
+        int min1 = Integer.MIN_VALUE;
         int min2 = Integer.MAX_VALUE;
 
         for (int num : numbers) {
